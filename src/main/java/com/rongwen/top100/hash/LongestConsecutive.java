@@ -37,9 +37,4 @@ public class LongestConsecutive {
         return longStreak;
     }
 
-    public static void main(String[] args) {
-        int[] arr = {100, 4, 200, 1, 3, 2, 4};
-        System.out.println(new LongestConsecutive().longestConsecutive(arr));
-
-    }
 }
