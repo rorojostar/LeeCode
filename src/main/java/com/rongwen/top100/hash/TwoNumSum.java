@@ -18,7 +18,7 @@ public class TwoNumSum {
      * @return 下标
      */
     public int[] twoNumSum(int[] nums, int target) {
-        if (nums == null || nums.length < 2) return null;
+        if (nums == null || nums.length < 2) return new int[]{};
         HashMap<Integer, Integer> hashMap = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             if (hashMap.containsKey(target - nums[i])) {
@@ -26,6 +26,6 @@ public class TwoNumSum {
             }
             hashMap.put(nums[i], i);
         }
-        return new int[0];
+        return new int[]{};
     }
 }
