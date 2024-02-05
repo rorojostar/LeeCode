@@ -2,7 +2,7 @@ package com.rongwen.top100.hash;
 
 import java.util.HashMap;
 
-public class TwoNumSum {
+public class TwoNumsSum {
     /**
      * easy
      * 1. 两数之和
