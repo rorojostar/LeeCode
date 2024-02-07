@@ -20,6 +20,17 @@ public class Utils {
         arr[i] = arr[i] ^ arr[j];
     }
 
+
+    public static void reverse(int[] arr, int i, int j) {
+        while (i < j) {
+            int tmp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = tmp;
+            i++;
+            j--;
+        }
+    }
+
     public static void comparator(int[] arr) {
         Arrays.sort(arr);
     }
@@ -68,16 +79,15 @@ public class Utils {
         for (int i = 0; i < testTime; i++) {
             int[] arr1 = Utils.generateRandomArray(maxSize, maxValue);
             int[] arr2 = Utils.copyArray(arr1);
-            method.invoke(method.getClass(),arr1);
+            method.invoke(method.getClass(), arr1);
             Utils.comparator(arr2);
             if (!Utils.isEqual(arr1, arr2)) {
                 succeed = false;
                 break;
             }
         }
-        System.out.println(succeed ? method.getName()+" is nice" :method.getName()+" is shit");
+        System.out.println(succeed ? method.getName() + " is nice" : method.getName() + " is shit");
     }
-
 
 
 }
