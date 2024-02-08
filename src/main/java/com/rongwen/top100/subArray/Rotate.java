@@ -15,7 +15,7 @@ public class Rotate {
     public void rotate(int[] nums, int k) {
         k %= nums.length;
 
-        Utils.reverse(nums, 0, nums.length - 1);
+        Utils.reverse(nums, 0, nums.length  - 1);
         Utils.reverse(nums, 0, k - 1);
         Utils.reverse(nums, k, nums.length - 1);
     }
