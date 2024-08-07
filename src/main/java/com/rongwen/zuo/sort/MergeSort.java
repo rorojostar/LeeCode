@@ -16,7 +16,7 @@ public class MergeSort {
 
     public static void process(int[] arr, int L, int R) {
         if (L == R) return;
-        int mid = L + ((R - L) >> 1);
+        int mid = L + ((R - L) >> 1); //(L+R)/2 会溢出 不安全
         process(arr, L, mid);
         process(arr, mid + 1, R);
         merge(arr, L, mid, R);

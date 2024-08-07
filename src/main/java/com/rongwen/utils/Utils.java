@@ -72,7 +72,7 @@ public class Utils {
     //对数器
     public static void duishuqi(Method method) throws InvocationTargetException, IllegalAccessException {
         int testTime = 500000;
-        int maxSize = 10;
+        int maxSize = 100;
         int maxValue = 100;
         boolean succeed = true;
 
